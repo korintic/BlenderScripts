@@ -17,6 +17,6 @@ Addon that bakes multiple actions from a control rig to a deform rig and exports
 Selected objects must include the source rig to bake from and the target rig to bake to.
 The target should be the active object. The selection can also include the model(s) that should be exported with the target rig.
 
-The export location is set in the addon preferences. Also set there is the source action name filter with "Control Rig Action Name Prefix:" which filters actions to bake using a prefix. If this is left blank all actions will be baked and exported. "Export Action Name Prefix:" sets the target action name which will replace the source prefix or if left blank strip it from the exported actions. 
+The export location is set in the addon preferences. Also set there is the source action name filter with "Source Action Name Prefix:" which filters actions to bake using a prefix. If this is left blank all actions will be baked and exported. "Export Action Name Prefix:" sets the target action name which will replace the source prefix or if left blank strip it from the exported actions. 
 
 The addon is useful for transferring animations from a control rig to a deform rig for quick export.
