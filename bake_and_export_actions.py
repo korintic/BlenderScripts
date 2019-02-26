@@ -25,7 +25,7 @@ def main(self, context):
     exportActions = []
     exportObjects = []
 
-    save_location = context.user_preferences.addons[__name__].preferences.filepath
+    save_location = bpy.path.abspath(context.user_preferences.addons[__name__].preferences.filepath)
     if not path.exists(save_location):
             self.report({'INFO'}, "Invalid path update in addon preferences")
             return {'CANCELLED'}
@@ -125,7 +125,7 @@ def main(self, context):
 class BakeAndExportActions(bpy.types.Operator):
     """Bake all actions from source to target and export them"""
     bl_idname = "object.bake_and_export_actions"
-    bl_label = "Bake and Export Actions"
+    bl_label = "Bake And Export Actions"
     bl_options = {'REGISTER', 'UNDO'}
 
     @classmethod
@@ -154,11 +154,11 @@ class BakeAndExportActionsPrefs(AddonPreferences):
     bl_idname = __name__
 
     filepath = StringProperty(
-        name="Example File Path",
+        name="Export Folder",
         subtype='FILE_PATH',
     )
     source_prefix = StringProperty(
-        name="Control Rig Action Name Prefix",
+        name="Source Action Name Prefix",
         default='Ctrl_',
     )
     target_prefix = StringProperty(
