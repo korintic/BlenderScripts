@@ -1,6 +1,11 @@
 # Blender Scripts
 Collection of simple Blender python scripts written to speedup workflow. These scripts are written for working with Blender 2.79a and have not been tested in other versions.
 
+#### Scripts:
+* Transfer Shape Keys by Surface
+* Copy Object to Mesh Name
+* Bake and Export Actions
+
 ***
 
 ### Transfer Shape Keys by Surface (transfer_shape_keys.py)
