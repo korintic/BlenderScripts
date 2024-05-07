@@ -1,5 +1,14 @@
 # Blender Scripts
-Collection of simple Blender python scripts written to speedup workflow. These scripts are written for working with Blender 2.79a and have not been tested in other versions.
+Collection of simple Blender python scripts written to speed up workflow. These scripts are written for working with Blender 2.79a and have not been tested in other versions.
+
+---
+### ⚠️ Important Notice
+
+As of 2024, these scripts have not been maintained or updated for several years. Blender has undergone significant updates during this period, including major changes to the program and its scripting API. As a result, these scripts may not function as intended with versions beyond Blender 2.79a.
+
+**Users are advised to use these scripts with caution as they may require modifications to work correctly with newer versions of Blender.**
+
+---
 
 #### Scripts:
 * [Transfer Shape Keys by Surface](#transfer-shape-keys-by-surface-transfer_shape_keyspy)
